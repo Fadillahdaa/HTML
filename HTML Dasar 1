@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html> 
 <head>
-    <title>Sample page</title>
+    <title>Judul Halaman</title>
 </head>
-<body>
-    <h1>Sample page</h1>
-    <p>this is a <a href="demo.html">simple</a>simple.</p>
-    <!--this is a comment-->
+<body bgcolor="red">
+    <h1> <HeAder> </h1>
+    <P > ini andalah link 
+         <a href="demo.html"></a>
+    </p>
+    
+    <ol type="a">
+        <li> Kentang Goreng</li>
+        <li> Mie Ayam</li>
+        <li> Es Teh</li>
+    </ol>
 </body>
 </html>
