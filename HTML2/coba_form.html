@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTP-8">
-        <title>Form Sederhana</title>
-        <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <form action="/action_page.php">
-            <label for="depan">Nama Depan:</label><br>
-            <input type="text" id="depan" name="i_name" value="Budi"><br>
-            <label for="n_belakang">Nama Belakang</label><br>
-            <input type="text" id="n_belakang" name="i_belakang" value="Prawira"><br>\
-            <input type="Submit" value="Kirim">
-            <input type="reset" value="Reset">
-        </form>
-        <p>Jika Anda mengeklik tombol "Kirim", data formulir akan dikirim ke halaman bernama
-            "/action_page.php,"
-            <p>Kesimpulan</p>
-        </p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sederhana</title>
+    <link rel="icon" type="image/png" href="gambar/icon.png" sizes="16x16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="/action_page.php" method="post" target="_blank">
+        <label for="depan">Nama Depan:</label><br>
+        <input type="text" id="depan" name="i_name" value="Budi"><br>
+        <label for="n_belakang">Nama Belakang:</label><br>
+        <input type="text" id="n_belakang" name="i_belakang" value="Prawira"><br>
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    </form>
+    <p>Jika Anda mengeklik tombol "Kirim", data formulir akan dikirim ke halaman bernama "/action_page.php"</p>
+    <p>Kesimpulan:</p>
+    <ul>
+        <li>Isi data dan tekan tombol reset: Tombol Reset akan menghapus semua data yang telah dimasukkan ke dalam formulir.</li>
+        <li>Isi data tekan tombol kirim: Tombol Kirim akan mengirimkan data formulir ke halaman yang ditentukan dalam atribut action.</li>
+        <li>Ujicoba dengan menambahkan atribut target dengan isi _self,_blank dll: Atribut target digunakan untuk menentukan di mana hasil dari pengiriman formulir akan ditampilkan. Misalnya, dengan menggunakan "_blank", hasilnya akan ditampilkan di tab atau jendela baru.</li>
+        <li>Uji coba dengan menambahkan atribut method="get” dan method="post": Atribut method digunakan untuk menentukan metode pengiriman data. Metode "get" akan menampilkan data di URL, sedangkan metode "post" akan menyembunyikan data dari URL.</li>
+    </ul>
+</body>
 </html>
